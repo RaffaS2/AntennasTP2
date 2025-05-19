@@ -15,6 +15,7 @@
  * - Procura em profundidade a partir de uma determinada antena
  * - Procura em largura a partir de uma determinada antena
  * - Procura todos os caminhos entre duas antenas
+ * - Lista todas as intersecções entre duas frequencias diferentes 
  * - Liberta a memória de ambos os grafos criados
  * 
  * @date 2025-05-08
