@@ -413,38 +413,38 @@ void breadthFirstSearch(Graph* g, int startX, int startY, char frequency) {
  *
  * Esta função explora recursivamente os vértices adjacentes do vértice atual, 
  * construindo um caminho temporário e imprimindo-o sempre que o vértice destino for alcançado.
- * Utiliza backtracking para garantir que todos os caminhos possíveis são explorados.
  *
  * @param current Vértice atual na pesquisa
  * @param target Vértice destino que se pretende alcançar
  * @param path Array de pointers para os vértices que compõem o caminho atual
- * @param pathIndex Índice do próximo elemento a inserir no array path
+ * @param length Length controla o tamanho do caminho atual (ou seja, quantos vértices estão em path[])
  */
-void findPathsRecursive(Vertex* current, Vertex* target, Vertex* path[], int pathIndex) {
+void findPathsRecursive(Vertex* current, Vertex* target, Vertex* path[], int length) {
     if (current == NULL || current->visited)
         return;
 
     // Marca o vértice atual como visitado para evitar ciclos
     current->visited = true;
-    // Adiciona o vértice atual ao caminho na posição pathIndex e incrementa o índice
-    path[pathIndex++] = current;
+    // Adiciona o vértice atual ao caminho na posição length e incrementa o array
+    path[length] = current;
+    length++;
 
-    // Se o vértice atual é o destino, imprime o caminho encontrado
+    // Se chegou ao destino imprime o caminho
     if (current == target) {
-        // Caminho completo encontrado
         printf("Path Founded: ");
-        for (int i = 0; i < pathIndex; i++) {
+        for (int i = 0; i < length; i++) {
             printf("(%d,%d)", path[i]->x, path[i]->y);
-            if (i < pathIndex - 1) printf(" -> ");
+            if (i < length - 1) printf(" -> ");
         }
         printf("\n");
+    // Se não chegou ao destino, explora os vértices adjacentes válidos para continuar a procura
     } else {
         AdjList* adj = current->adjacents;
         while (adj != NULL) {
             Vertex* neighbor = adj->vertex;
             // Só visita o adjacente se ainda não foi visitado e tiver a mesma frequência que o atual
             if (!neighbor->visited && neighbor->frequency == current->frequency) {
-                findPathsRecursive(neighbor, target, path, pathIndex);
+                findPathsRecursive(neighbor, target, path, length);
             }
             adj = adj->next;
         }
