@@ -18,6 +18,7 @@ Vertex *createVertex(int x, int y, char frequency);
 void addVertex(Graph *g, int x, int y, char frequency);
 void addEdge(Vertex *a, Vertex *b);
 void printGraph(Graph *g);
+void freeGraph(Graph *g);
 
 Graph *readGraphFromFile(const char *filename);
 void writeGraphToBinary(const char *filename, Graph *g);
@@ -33,6 +34,5 @@ void findAllPaths(Graph* g, int x1, int y1, int x2, int y2, char freq);
 void listIntersectionsBetweenFrequencies(Graph *g, char frequencyA, char frequencyB);
 
 
-void freeGraph(Graph *g);
 
 #endif
