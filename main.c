@@ -28,7 +28,7 @@
 
 int main() {
     Graph *g = NULL;  // Declara e inicializa como NULL
-    g = readGraphFromFile("data/antennasFile1.txt");  // Depois atribui o grafo lido
+    g = readGraphFromFile("data/antennasFile1.txt"); 
 
     if (g == NULL) {
         printf("Antenna matrix is empty after reading from text file\n");
