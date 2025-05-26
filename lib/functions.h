@@ -1,7 +1,7 @@
 /**
  * @file functions.h
  * @author a24869
- * @brief Ficheiro para chamar as funções
+ * @brief Declaração das funções principais para manipulação do grafo.
  * 
  * @date 2025-05-08
  * 

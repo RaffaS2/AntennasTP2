@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>24869_TP2: lib/functions.h File Reference</title>
+<title>24869_TP2: functions.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,80 +59,78 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">functions.h File Reference</div>  </div>
+<div class="title">functions.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Declaração das funções principais para manipulação do grafo.  
+<p>Implementação de todas as funções chamadas no <a class="el" href="functions_8h.html" title="Declaração das funções principais para manipulação do grafo.">functions.h</a>.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="structs_8h_source.html">structs.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="functions_8h_source.html">lib/functions.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for functions.h:</div>
+Include dependency graph for functions.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="functions_8h__incl.png" border="0" usemap="#lib_2functions_8h" alt=""/></div>
+<div class="center"><img src="functions_8c__incl.png" border="0" usemap="#functions_8c" alt=""/></div>
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="functions_8h__dep__incl.png" border="0" usemap="#lib_2functions_8hdep" alt=""/></div>
-</div>
-</div>
-<p><a href="functions_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae0d20497e886cccb8e9a76f658ca35cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGraph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#ae0d20497e886cccb8e9a76f658ca35cb">createGraph</a> ()</td></tr>
-<tr class="memdesc:ae0d20497e886cccb8e9a76f658ca35cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria e inicializa um grafo vazio.  <a href="functions_8h.html#ae0d20497e886cccb8e9a76f658ca35cb">More...</a><br /></td></tr>
+<tr class="memitem:ae0d20497e886cccb8e9a76f658ca35cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGraph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#ae0d20497e886cccb8e9a76f658ca35cb">createGraph</a> ()</td></tr>
+<tr class="memdesc:ae0d20497e886cccb8e9a76f658ca35cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria e inicializa um grafo vazio.  <a href="functions_8c.html#ae0d20497e886cccb8e9a76f658ca35cb">More...</a><br /></td></tr>
 <tr class="separator:ae0d20497e886cccb8e9a76f658ca35cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d2cdf0217320b5fdd52aac07d78075e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a7d2cdf0217320b5fdd52aac07d78075e">createVertex</a> (int x, int y, char frequency)</td></tr>
-<tr class="memdesc:a7d2cdf0217320b5fdd52aac07d78075e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um novo vértice (antena)  <a href="functions_8h.html#a7d2cdf0217320b5fdd52aac07d78075e">More...</a><br /></td></tr>
+<tr class="memitem:a7d2cdf0217320b5fdd52aac07d78075e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVertex.html">Vertex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a7d2cdf0217320b5fdd52aac07d78075e">createVertex</a> (int x, int y, char frequency)</td></tr>
+<tr class="memdesc:a7d2cdf0217320b5fdd52aac07d78075e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um novo vértice (antena)  <a href="functions_8c.html#a7d2cdf0217320b5fdd52aac07d78075e">More...</a><br /></td></tr>
 <tr class="separator:a7d2cdf0217320b5fdd52aac07d78075e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7230145ea68383c334d092abddab4563"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a7230145ea68383c334d092abddab4563">addVertex</a> (<a class="el" href="structGraph.html">Graph</a> *g, int x, int y, char frequency)</td></tr>
-<tr class="memdesc:a7230145ea68383c334d092abddab4563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um novo vértice ao grafo e conecta com os da mesma frequência.  <a href="functions_8h.html#a7230145ea68383c334d092abddab4563">More...</a><br /></td></tr>
-<tr class="separator:a7230145ea68383c334d092abddab4563"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add98c174cb0cddf7e5ceebdadf082769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#add98c174cb0cddf7e5ceebdadf082769">addEdge</a> (<a class="el" href="structVertex.html">Vertex</a> *a, <a class="el" href="structVertex.html">Vertex</a> *b)</td></tr>
-<tr class="memdesc:add98c174cb0cddf7e5ceebdadf082769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona uma aresta bidirecional entre dois vértices.  <a href="functions_8h.html#add98c174cb0cddf7e5ceebdadf082769">More...</a><br /></td></tr>
+<tr class="memitem:add98c174cb0cddf7e5ceebdadf082769"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#add98c174cb0cddf7e5ceebdadf082769">addEdge</a> (<a class="el" href="structVertex.html">Vertex</a> *a, <a class="el" href="structVertex.html">Vertex</a> *b)</td></tr>
+<tr class="memdesc:add98c174cb0cddf7e5ceebdadf082769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona uma aresta bidirecional entre dois vértices.  <a href="functions_8c.html#add98c174cb0cddf7e5ceebdadf082769">More...</a><br /></td></tr>
 <tr class="separator:add98c174cb0cddf7e5ceebdadf082769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5deb8a0d0614aecd60ca35e8f1850b95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a5deb8a0d0614aecd60ca35e8f1850b95">printGraph</a> (<a class="el" href="structGraph.html">Graph</a> *g)</td></tr>
-<tr class="memdesc:a5deb8a0d0614aecd60ca35e8f1850b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime o conteúdo do grafo.  <a href="functions_8h.html#a5deb8a0d0614aecd60ca35e8f1850b95">More...</a><br /></td></tr>
+<tr class="memitem:a7230145ea68383c334d092abddab4563"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a7230145ea68383c334d092abddab4563">addVertex</a> (<a class="el" href="structGraph.html">Graph</a> *g, int x, int y, char frequency)</td></tr>
+<tr class="memdesc:a7230145ea68383c334d092abddab4563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adiciona um novo vértice ao grafo e conecta com os da mesma frequência.  <a href="functions_8c.html#a7230145ea68383c334d092abddab4563">More...</a><br /></td></tr>
+<tr class="separator:a7230145ea68383c334d092abddab4563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5deb8a0d0614aecd60ca35e8f1850b95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a5deb8a0d0614aecd60ca35e8f1850b95">printGraph</a> (<a class="el" href="structGraph.html">Graph</a> *g)</td></tr>
+<tr class="memdesc:a5deb8a0d0614aecd60ca35e8f1850b95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime o conteúdo do grafo.  <a href="functions_8c.html#a5deb8a0d0614aecd60ca35e8f1850b95">More...</a><br /></td></tr>
 <tr class="separator:a5deb8a0d0614aecd60ca35e8f1850b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427a2a8378ba7abbeb161fe6d5624047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a427a2a8378ba7abbeb161fe6d5624047">freeGraph</a> (<a class="el" href="structGraph.html">Graph</a> *g)</td></tr>
-<tr class="memdesc:a427a2a8378ba7abbeb161fe6d5624047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liberta toda a memória associada a um grafo.  <a href="functions_8h.html#a427a2a8378ba7abbeb161fe6d5624047">More...</a><br /></td></tr>
-<tr class="separator:a427a2a8378ba7abbeb161fe6d5624047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352421614a2d9ee187a79aa9272641d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGraph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a352421614a2d9ee187a79aa9272641d5">readGraphFromFile</a> (const char *filename)</td></tr>
-<tr class="memdesc:a352421614a2d9ee187a79aa9272641d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lê um grafo de um ficheiro de texto.  <a href="functions_8h.html#a352421614a2d9ee187a79aa9272641d5">More...</a><br /></td></tr>
+<tr class="memitem:a352421614a2d9ee187a79aa9272641d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGraph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a352421614a2d9ee187a79aa9272641d5">readGraphFromFile</a> (const char *filename)</td></tr>
+<tr class="memdesc:a352421614a2d9ee187a79aa9272641d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lê um grafo de um ficheiro de texto.  <a href="functions_8c.html#a352421614a2d9ee187a79aa9272641d5">More...</a><br /></td></tr>
 <tr class="separator:a352421614a2d9ee187a79aa9272641d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485d3a6e8d71b38848a95b0fbee2efe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a485d3a6e8d71b38848a95b0fbee2efe7">writeGraphToBinary</a> (const char *filename, <a class="el" href="structGraph.html">Graph</a> *g)</td></tr>
-<tr class="memdesc:a485d3a6e8d71b38848a95b0fbee2efe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escreve um grafo para um ficheiro binário.  <a href="functions_8h.html#a485d3a6e8d71b38848a95b0fbee2efe7">More...</a><br /></td></tr>
+<tr class="memitem:a485d3a6e8d71b38848a95b0fbee2efe7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a485d3a6e8d71b38848a95b0fbee2efe7">writeGraphToBinary</a> (const char *filename, <a class="el" href="structGraph.html">Graph</a> *g)</td></tr>
+<tr class="memdesc:a485d3a6e8d71b38848a95b0fbee2efe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escreve um grafo para um ficheiro binário.  <a href="functions_8c.html#a485d3a6e8d71b38848a95b0fbee2efe7">More...</a><br /></td></tr>
 <tr class="separator:a485d3a6e8d71b38848a95b0fbee2efe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57cdb320d0c16ed4c83ed3cac0c2ffaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGraph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a57cdb320d0c16ed4c83ed3cac0c2ffaf">readGraphFromBinary</a> (const char *filename)</td></tr>
-<tr class="memdesc:a57cdb320d0c16ed4c83ed3cac0c2ffaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lê um grafo a partir de um ficheiro binário.  <a href="functions_8h.html#a57cdb320d0c16ed4c83ed3cac0c2ffaf">More...</a><br /></td></tr>
+<tr class="memitem:a57cdb320d0c16ed4c83ed3cac0c2ffaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGraph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a57cdb320d0c16ed4c83ed3cac0c2ffaf">readGraphFromBinary</a> (const char *filename)</td></tr>
+<tr class="memdesc:a57cdb320d0c16ed4c83ed3cac0c2ffaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lê um grafo a partir de um ficheiro binário.  <a href="functions_8c.html#a57cdb320d0c16ed4c83ed3cac0c2ffaf">More...</a><br /></td></tr>
 <tr class="separator:a57cdb320d0c16ed4c83ed3cac0c2ffaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e0c065c502fb4e2230190b56385242f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a7e0c065c502fb4e2230190b56385242f">depthFirstSearch</a> (<a class="el" href="structGraph.html">Graph</a> *g, int startX, int startY, char freq)</td></tr>
-<tr class="memdesc:a7e0c065c502fb4e2230190b56385242f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função principal que inicia a Depth-First Search (DFS) no grafo.  <a href="functions_8h.html#a7e0c065c502fb4e2230190b56385242f">More...</a><br /></td></tr>
-<tr class="separator:a7e0c065c502fb4e2230190b56385242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec1a6ff51e14a9e6d79a5930799e900c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#aec1a6ff51e14a9e6d79a5930799e900c">breadthFirstSearch</a> (<a class="el" href="structGraph.html">Graph</a> *g, int startX, int startY, char freq)</td></tr>
-<tr class="memdesc:aec1a6ff51e14a9e6d79a5930799e900c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementa a Breadth-First Search (BFS) no grafo.  <a href="functions_8h.html#aec1a6ff51e14a9e6d79a5930799e900c">More...</a><br /></td></tr>
-<tr class="separator:aec1a6ff51e14a9e6d79a5930799e900c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a4f705e442148bed4f96f0da447cbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#a91a4f705e442148bed4f96f0da447cbb">findAllPaths</a> (<a class="el" href="structGraph.html">Graph</a> *g, int x1, int y1, int x2, int y2, char freq)</td></tr>
-<tr class="memdesc:a91a4f705e442148bed4f96f0da447cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encontra e imprime todos os caminhos entre dois vértices com frequência comum.  <a href="functions_8h.html#a91a4f705e442148bed4f96f0da447cbb">More...</a><br /></td></tr>
-<tr class="separator:a91a4f705e442148bed4f96f0da447cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f8365affd44e23226d145dc2c39bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8h.html#af7f8365affd44e23226d145dc2c39bef">listIntersectionsBetweenFrequencies</a> (<a class="el" href="structGraph.html">Graph</a> *g, char frequencyA, char frequencyB)</td></tr>
-<tr class="memdesc:af7f8365affd44e23226d145dc2c39bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica e lista de pares de vértices com frequência A e B que são vizinhos, considerando todas as direções adjacentes (4 sentidos diretos e 4 sentidos diagonais).  <a href="functions_8h.html#af7f8365affd44e23226d145dc2c39bef">More...</a><br /></td></tr>
+<tr class="memitem:a52bea8f4fb8f22105430a77728001f10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a52bea8f4fb8f22105430a77728001f10">dfsVisit</a> (<a class="el" href="structVertex.html">Vertex</a> *v)</td></tr>
+<tr class="memdesc:a52bea8f4fb8f22105430a77728001f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visita recursiva para Depth-First Search (DFS)  <a href="functions_8c.html#a52bea8f4fb8f22105430a77728001f10">More...</a><br /></td></tr>
+<tr class="separator:a52bea8f4fb8f22105430a77728001f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea83cd8c45c0e346253c49ddfbe3775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#afea83cd8c45c0e346253c49ddfbe3775">depthFirstSearch</a> (<a class="el" href="structGraph.html">Graph</a> *g, int startX, int startY, char frequency)</td></tr>
+<tr class="memdesc:afea83cd8c45c0e346253c49ddfbe3775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função principal que inicia a Depth-First Search (DFS) no grafo.  <a href="functions_8c.html#afea83cd8c45c0e346253c49ddfbe3775">More...</a><br /></td></tr>
+<tr class="separator:afea83cd8c45c0e346253c49ddfbe3775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a37f47383c13d74ee002c789b4c886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#af9a37f47383c13d74ee002c789b4c886">breadthFirstSearch</a> (<a class="el" href="structGraph.html">Graph</a> *g, int startX, int startY, char frequency)</td></tr>
+<tr class="memdesc:af9a37f47383c13d74ee002c789b4c886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementa a Breadth-First Search (BFS) no grafo.  <a href="functions_8c.html#af9a37f47383c13d74ee002c789b4c886">More...</a><br /></td></tr>
+<tr class="separator:af9a37f47383c13d74ee002c789b4c886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c8518a7e5cd6780a914a5dc515e3a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a39c8518a7e5cd6780a914a5dc515e3a2">findPathsRecursive</a> (<a class="el" href="structVertex.html">Vertex</a> *current, <a class="el" href="structVertex.html">Vertex</a> *target, <a class="el" href="structVertex.html">Vertex</a> *path[], int length)</td></tr>
+<tr class="memdesc:a39c8518a7e5cd6780a914a5dc515e3a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função recursiva para encontrar todos os caminhos entre dois vértices com a mesma frequência.  <a href="functions_8c.html#a39c8518a7e5cd6780a914a5dc515e3a2">More...</a><br /></td></tr>
+<tr class="separator:a39c8518a7e5cd6780a914a5dc515e3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bdb25ad3118fcec980ee32db3e1bb7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a9bdb25ad3118fcec980ee32db3e1bb7f">findAllPaths</a> (<a class="el" href="structGraph.html">Graph</a> *g, int x1, int y1, int x2, int y2, char frequency)</td></tr>
+<tr class="memdesc:a9bdb25ad3118fcec980ee32db3e1bb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encontra e imprime todos os caminhos entre dois vértices com frequência comum.  <a href="functions_8c.html#a9bdb25ad3118fcec980ee32db3e1bb7f">More...</a><br /></td></tr>
+<tr class="separator:a9bdb25ad3118fcec980ee32db3e1bb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f8365affd44e23226d145dc2c39bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#af7f8365affd44e23226d145dc2c39bef">listIntersectionsBetweenFrequencies</a> (<a class="el" href="structGraph.html">Graph</a> *g, char frequencyA, char frequencyB)</td></tr>
+<tr class="memdesc:af7f8365affd44e23226d145dc2c39bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica e lista de pares de vértices com frequência A e B que são vizinhos, considerando todas as direções adjacentes (4 sentidos diretos e 4 sentidos diagonais).  <a href="functions_8c.html#af7f8365affd44e23226d145dc2c39bef">More...</a><br /></td></tr>
 <tr class="separator:af7f8365affd44e23226d145dc2c39bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a427a2a8378ba7abbeb161fe6d5624047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8c.html#a427a2a8378ba7abbeb161fe6d5624047">freeGraph</a> (<a class="el" href="structGraph.html">Graph</a> *g)</td></tr>
+<tr class="memdesc:a427a2a8378ba7abbeb161fe6d5624047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liberta toda a memória associada a um grafo.  <a href="functions_8c.html#a427a2a8378ba7abbeb161fe6d5624047">More...</a><br /></td></tr>
+<tr class="separator:a427a2a8378ba7abbeb161fe6d5624047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Declaração das funções principais para manipulação do grafo. </p>
+<div class="textblock"><p>Implementação de todas as funções chamadas no <a class="el" href="functions_8h.html" title="Declaração das funções principais para manipulação do grafo.">functions.h</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>a24869 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2025-05-08 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -226,8 +224,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aec1a6ff51e14a9e6d79a5930799e900c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec1a6ff51e14a9e6d79a5930799e900c">&#9670;&nbsp;</a></span>breadthFirstSearch()</h2>
+<a id="af9a37f47383c13d74ee002c789b4c886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a37f47383c13d74ee002c789b4c886">&#9670;&nbsp;</a></span>breadthFirstSearch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,8 +345,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e0c065c502fb4e2230190b56385242f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e0c065c502fb4e2230190b56385242f">&#9670;&nbsp;</a></span>depthFirstSearch()</h2>
+<a id="afea83cd8c45c0e346253c49ddfbe3775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea83cd8c45c0e346253c49ddfbe3775">&#9670;&nbsp;</a></span>depthFirstSearch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,8 +397,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a91a4f705e442148bed4f96f0da447cbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91a4f705e442148bed4f96f0da447cbb">&#9670;&nbsp;</a></span>findAllPaths()</h2>
+<a id="a52bea8f4fb8f22105430a77728001f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52bea8f4fb8f22105430a77728001f10">&#9670;&nbsp;</a></span>dfsVisit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dfsVisit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Visita recursiva para Depth-First Search (DFS) </p>
+<p>Esta função marca o vértice como visitado, imprime-o, e recursivamente visita os seus adjacentes que tenham a mesma frequência e ainda não tenham sido visitados.</p>
+<p>DFS em output: visita sempre o primeiro adjacente de cada vértice</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Pointer para o vértice atual </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9bdb25ad3118fcec980ee32db3e1bb7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bdb25ad3118fcec980ee32db3e1bb7f">&#9670;&nbsp;</a></span>findAllPaths()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,6 +485,58 @@ Functions</h2></td></tr>
     <tr><td class="paramname">x2</td><td>Coordenada X do vértice de destino </td></tr>
     <tr><td class="paramname">y2</td><td>Coordenada Y do vértice de destino </td></tr>
     <tr><td class="paramname">frequency</td><td>Frequência comum requerida para os vértices do caminho </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39c8518a7e5cd6780a914a5dc515e3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c8518a7e5cd6780a914a5dc515e3a2">&#9670;&nbsp;</a></span>findPathsRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void findPathsRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVertex.html">Vertex</a> *&#160;</td>
+          <td class="paramname"><em>path</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função recursiva para encontrar todos os caminhos entre dois vértices com a mesma frequência. </p>
+<p>Esta função explora recursivamente os vértices adjacentes do vértice atual, construindo um caminho temporário e imprimindo-o sempre que o vértice destino for alcançado.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current</td><td>Vértice atual na pesquisa </td></tr>
+    <tr><td class="paramname">target</td><td>Vértice destino que se pretende alcançar </td></tr>
+    <tr><td class="paramname">path</td><td>Array de pointers para os vértices que compõem o caminho atual </td></tr>
+    <tr><td class="paramname">length</td><td>Length controla o tamanho do caminho atual (ou seja, quantos vértices estão em path[]) </td></tr>
   </table>
   </dd>
 </dl>

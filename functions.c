@@ -1,7 +1,7 @@
 /**
- * @file functions.h
+ * @file functions.c
  * @author a24869
- * @brief Ficheiro para implementar todas as funções chamadas no functions.h
+ * @brief Implementação de todas as funções chamadas no functions.h
  * 
  * @date 2025-05-08
  * 
@@ -264,7 +264,7 @@ Graph *readGraphFromBinary(const char *filename) {
 
         // Pega o vértice que está na posicao i da lista (simplesmente percorrer)
         Vertex *v = g->vertices;
-        for (int j = 0; j < vertexCount - i - 1; j++) {
+        for (int j = 0; j < i - 1; j++) {
             v = v->next;
         }
 
@@ -389,10 +389,12 @@ void breadthFirstSearch(Graph* g, int startX, int startY, char frequency) {
     int front = 0, back = 0;
 
     // Iniciar com o vértice inicial
-    queue[back++] = start;
+    queue[back] = start;
+    back++;
     start->visited = true;
 
     while (front < back) {
+        //dequeue
         Vertex* current = queue[front++];
         printf("Visited: (%d, %d)\n", current->x, current->y);
 
@@ -401,6 +403,7 @@ void breadthFirstSearch(Graph* g, int startX, int startY, char frequency) {
             Vertex* neighbor = adj->vertex;
             if (!neighbor->visited && neighbor->frequency == current->frequency) {
                 neighbor->visited = true;
+                //enqueue
                 queue[back++] = neighbor;
             }
             adj = adj->next;
